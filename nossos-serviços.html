@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>nossos serviços</title>
+</head>
+
+<body>
+    <div onclick="clickOnTheMask()" class="mask-form"></div>
+    <div class="container-main">
+        <div class="container-text">
+            <div onscroll="scrollPosition()" id="header" class="header">
+                <img src="./assets/icon.png" alt="logo mario" />
+                <a href="./index.html">Home</a>
+                <a href="./nossos-serviços.html">Nossos Serviços</a>
+                <button onclick="clickOnTheButton()">entre em conatato</button>
+            </div>
+            <h3>Instalação</h3>
+
+            <ul>
+                <li>Tubulações de água, esgoto e gás. </li>
+                <li>Torneiras, chuveiros, banheiras e outros aparelhos. </li>
+                <li>Sistemas de aquecimento de água (aquecedores a gás, solares, etc.). </li>
+            </ul>
+
+            <H3>Reparos e Manutenção</H3>
+
+            <ul>
+                <li>Consertos de vazamentos. </li>
+                <li>Desentupimento de pias, vasos sanitários, ralos e tubulações. </li>
+                <li>Reparo e manutenção de sistemas de aquecimento. </li>
+                <li>Substituição de peças danificadas. </li>
+                <li>Manutenção preventiva para garantir a eficiência do sistema.</li>
+            </ul>
+
+            <h3>Inspeções</h3>
+
+            <ul>
+                <li>Inspeções de segurança para garantir a conformidade com regulamentações. </li>
+                <li>Diagnóstico de problemas e identificação de possíveis falhas. </li>
+                <li>Inspeções com vídeo para detectar problemas em tubulações.</li>
+            </ul>
+
+            <h3>Serviços</h3>
+
+            <ul>
+                <li>Hidrojateamento para desentupimento de esgoto. </li>
+                <li>Instalação e manutenção de sistemas de combate a incêndio. </li>
+                <li>Serviços de consultoria para melhorias em sistemas hidráulicos. </li>
+                <li>Instalação de sistemas de resfriamento industrial.</li>
+            </ul>
+
+            <h3>Principais Áreas de Atuação</h3>
+
+            <ul>
+                <li>Residencial: Instalações e manutenção em casas e apartamentos.</li>
+                <li>Predial: Instalações e manutenção em prédios comerciais e industriais.</li>
+                <li>Industrial: Instalação e manutenção de sistemas complexos para processos industriais.</li>
+                <li>Construção Civil: Instalação de sistemas hidráulicos em novas edificações. </li>
+            </ul>
+        </div>
+       
+        <div class="container-image">
+            <img class="backgroud" src="./assets/backgroud.jpeg" alt="papel de parede">
+            <div class="mask"></div>
+        </div>
+            <div class="img-mario">
+        <img class="mario" src="./assets/mario.png" alt="Mario e luigi" />
+         </div>
+    </div>
+     <a href="https://w.app/edmbxr" class="link-whatsapp"><img src="./assets/whatsapp.png" alt="icone whatsapp"></a>
+     <form class="contact-us-form"
+      action="https://formcarry.com/s/Ck7FhnBd59x"
+      method="POST"
+      enctype="multipart/form-data">
+        <input  placeholder="Seu nome" type="text" name="nome">
+        <input  placeholder="Seu telefone" type="tel" name="telefone">
+        <textarea placeholder="digite o seu Problema aqui..." name="duvida"></textarea>
+        <button type="submit">pedir orçamento</button>
+    </form>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        color: white;
+        font-size: 22px;
+        font-family: "Bebas Neue", sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    button {
+    background-color: #FF0000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+
+}
+
+    .mario {
+        height: 600px;
+        margin-right: 50%;
+        
+    }
+
+    .img-mario {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .container-image {
+        position: fixed;
+        top: 0;
+        z-index: -1;
+    }
+
+    .backgroud {
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+    }
+     
+    .mask {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5%;
+        gap: 5px
+    }
+    .container-text h3 {
+        color: #FF0000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .header img {
+        height: 30px;
+    }
+    .header a {
+        text-decoration: none;
+    }
+    .header {
+        display: flex;
+        gap: 20px;
+        margin: 10px;
+        padding-left: 20px;
+    }
+
+    .link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.contact-us-form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    transition: left 1s ease-in-out;
+}
+
+.contact-us-form button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-left: 5px;
+    outline-color: #18D80F;
+    color: black;
+}
+
+textarea {
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-left: 5px;
+    outline-color: #18D80F;
+    color: black;
+
+}
+.mask-form {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media (max-width:1200px) {
+    .img-mario {
+        display: none;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .link-whatsapp img {
+    height: 45px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    }
+
+    #header{
+        position:static;
+        top: 0;
+        left: 0;
+        color: #ffffff;
+        
+        
+
+        
+    }
+    
+}
+
+</style>
+<script src="./scripts.js"></script>
+
+
+
+</html>

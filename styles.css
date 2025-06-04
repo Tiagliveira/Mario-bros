@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.logo-mario {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.image-mario-luigi {
+    width: 500px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: #FF0000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 50px;
+    outline: none;
+
+}
+
+button:hover {
+    opacity: 0.5;
+    width: 220px;
+    height: 65px;
+    font-size: 23px;
+    color: black;
+    box-shadow: 5px 10px 10px rgba(230, 5, 5, 0.8);
+    transition: 0.5s ease-in-out;
+
+}
+
+button:active {
+    background-color: black;
+}
+
+body {
+
+    height: 100vh;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.container-text {
+    width: 40%;
+    display: grid;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.container-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mask {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+p {
+    max-width: 500px;
+    font-size: 26;
+    display: grid;
+    gap: 0;
+}
+
+.header a {
+    text-decoration-line: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+    font-size: 24px;
+    cursor: pointer;
+
+
+}
+
+.header img {
+    height: 60px;
+}
+
+.header a:hover {
+    color: #FF0000;
+    font-size: 31px;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-us-form {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    transition: left 1s ease-in-out;
+}
+
+.contact-us-form button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-left: 5px;
+    outline-color: #18D80F;
+    color: black;
+}
+
+textarea {
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding-left: 5px;
+    outline-color: #18D80F;
+    color: black;
+
+}
+
+.mask-form {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+@media(max-width:1050px) {
+    .p1 {
+        display: none;
+    }
+    p {
+        font-size: 15px;
+        max-height: 350px;
+        width: auto;
+
+    }
+
+    .container-main {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+
+    }
+
+    .container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+    }
+
+    .image-mario-luigi {
+        margin-top: 20px;
+        width: 80vw;
+        height: auto;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header {
+        margin: 10px;
+        font-size: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-mario {
+        height: 130px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 5px;
+    }
+
+    .mask {
+        background-image: "./assets/backgroud.jpeg";
+        min-height: 100%;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    video {
+        display: none;
+    }
+    .image-backgroud{
+        height: 100vh;
+        width: auto;
+        
+    }
+    .link-whatsapp img {
+        width: 50px;
+    }
+}
