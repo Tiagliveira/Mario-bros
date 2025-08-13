@@ -1,7 +1,7 @@
 # 🛠️ Encanadores Mario & Luigi – Resolvendo Seus Problemas Com Estilo
 
 <p align="center">
-  <img src="/assets/readmeMario" alt="Preview Mario & Luigi" width="400"/>
+  <img src="/assets/ReadmeMario.PNG" alt="Preview Mario & Luigi" width="400"/>
 </p>
 
 
